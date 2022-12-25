@@ -1,0 +1,18 @@
+// @import "@src/styles/variables.scss";
+@import "src/styles/variable.scss";
+
+.imgGalleryCommon {
+  :global {
+    .image-gallery-image {
+      border-radius: 25px 0;
+
+      @include mq("lap") {
+        border-radius: 50px 0;
+      }
+    }
+
+    .image-gallery-thumbnail-image {
+      border-radius: 10px 0;
+    }
+  }
+}

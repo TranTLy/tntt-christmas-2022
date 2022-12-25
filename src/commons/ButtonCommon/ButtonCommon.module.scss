@@ -1,0 +1,209 @@
+// @import "@src/styles/variable.scss";
+@import "src/styles/variable.scss";
+
+
+.buttonCommon {
+  height: $height-input-common;
+  font-size: $font-size-heading6;
+  font-weight: bold;
+  border-radius: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 4px 4px 8px rgba(34, 43, 84, 0.12);
+  }
+
+  // size
+  &.normal {
+    height: $height-input-common  !important;
+    font-size: $font-size-heading6  !important;
+  }
+
+  &.large {
+    height: 6rem !important;
+    font-size: $font-size-heading5  !important;
+    font-weight: 700;
+  }
+
+  // new size
+  &.size_default {
+    height: 6.4rem !important;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding: 1.6rem 2.4rem;
+  }
+
+  &.size_medium {
+    // height: 5.4rem !important;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: .8rem 2rem;
+  }
+
+  &.size_normal {
+    height: 40px !important;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 16px;
+  }
+
+  &.size_auth {
+    height: 54px !important;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 20px;
+    border-radius: 32px !important;
+  }
+
+  &.size_small {
+    height: 3.6rem !important;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 1.0rem 2.0rem;
+  }
+
+  // new type
+
+  &.type_default {
+    background-color: $color-warning;
+    border: none;
+    color: $color-black;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  &.type_primary {
+    background-color: $color-primary-light;
+    border: none;
+    color: $color-black;
+
+    &:hover {
+      filter: brightness(1.275);
+    }
+  }
+
+  &.type_positive {
+    background-color: $color-success;
+    border: none;
+    color: $color-white;
+
+    &:hover {
+      filter: brightness(1.275);
+    }
+  }
+
+  &.type_ghost {
+    background-color: transparent;
+    border: 1px solid $color-primary-light;
+    color: $color-primary-light;
+  }
+
+  &.type_border {
+    background-color: $color-white;
+    border: 2px solid $color-primary-1;
+    color: $color-primary-1;
+
+    &:hover {
+      color: $color-primary-1;
+    }
+  }
+
+  &.type_border_dark {
+    background-color: $color-white;
+    border: 2px solid $color-primary-3;
+    color: $color-primary-3;
+
+    &:hover {
+      color: $color-primary-3;
+    }
+  }
+
+  // type
+  &.success {
+    background-color: $color-warning  !important;
+    border: none;
+    color: $color-black;
+
+    &:hover {
+      background-color: $color-success  !important;
+      color: $color-white;
+    }
+
+    &:visited,
+    &:focus {
+      background-color: $color-success;
+    }
+  }
+
+  &.bright {
+    background-color: $color-warning;
+    border: none;
+    color: $color-black;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  :global {
+    .ant-btn-primary {
+      background-color: $color-primary-1  !important;
+      font-size: $font-size-paragraph;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+      outline: 1px solid;
+      outline-color: rgba(255, 255, 255, 0.5);
+      outline-offset: 0px;
+      text-shadow: none;
+      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+      &:hover {
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388;
+      }
+    }
+
+    .ant-btn-default {
+      color: $color-primary-1;
+      border-color: $color-primary-1;
+      position: relative;
+      transition: all 0.35s;
+      border: 1px solid;
+
+      span {
+        position: relative;
+        z-index: 2;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        bottom: 0;
+        height: 100%;
+        background: $color-primary-1;
+        transition: all 0.35s;
+      }
+
+      &:hover {
+        color: $color-white;
+        border-radius: 5px;
+      }
+
+      &:hover:after {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+}

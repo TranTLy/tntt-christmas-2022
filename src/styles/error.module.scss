@@ -1,0 +1,26 @@
+@import "./variable.scss";
+
+.errorPage {
+  margin: auto;
+  text-align: center;
+  .body{
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    button{
+      width: fit-content;
+      align-self: center;
+      margin-bottom: 20rem;
+      margin-top: 1rem;
+    }
+  }
+  .title {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 20rem;
+    padding-bottom: 2.4rem;
+    color: $color-error;
+  }
+}
