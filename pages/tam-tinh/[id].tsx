@@ -16,6 +16,8 @@ function ContentDetailPage({ ...props }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
+
+
                 <DataDetail data={contentDetail} />
 
                 <div>

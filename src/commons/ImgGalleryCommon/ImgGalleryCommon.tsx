@@ -9,7 +9,7 @@ interface Props {
 
 }
 
-const ImgGalleryCommon = memo(({ images, thumbnailPosition = 'left' }: Props) => {
+const ImgGalleryCommon = memo(({ images, thumbnailPosition = 'bottom' }: Props) => {
     return (
         <div className={s.imgGalleryCommon}>
             <ImageGallery
@@ -18,6 +18,7 @@ const ImgGalleryCommon = memo(({ images, thumbnailPosition = 'left' }: Props) =>
                 slideDuration={300}
                 slideOnThumbnailOver={true}
                 disableKeyDown={false}
+                onChang
             />
         </div>
     )
