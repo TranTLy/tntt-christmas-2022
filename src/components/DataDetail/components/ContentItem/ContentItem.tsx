@@ -13,12 +13,12 @@ const ContentItem = ({ data }: Props) => {
                     {data.id}
                 </span>
             </div>
-            {
+            {/* {
                 data.content &&
                 <div className={s.content}>
                     {data.content}
                 </div>
-            }
+            } */}
             <div className={s.nameWrap}>
                 {
                     data.holyName && <div className={s.holyName}>
