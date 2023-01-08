@@ -1,8 +1,5 @@
-import ImageCommon from '@src/commons/ImageCommon/ImageCommon';
-import ImgGalleryCommon from '@src/commons/ImgGalleryCommon/ImgGalleryCommon';
-import { Content, ImgGallery } from '@src/utils/type.utils';
-import React from 'react';
-import s from './ContentItem.module.scss'
+import { Content } from '@src/utils/type.utils';
+import s from './ContentItem.module.scss';
 
 interface Props {
     data: Content,
@@ -11,12 +8,14 @@ const ContentItem = ({ data }: Props) => {
 
     return (
         <div className={s.contentItem}>
-            <div>
-                Bức thư số {data.id}
+            <div className={s.top}>
+                Bức thư số <span className={s.number}>
+                    {data.id}
+                </span>
             </div>
             {
                 data.content &&
-                <div className={s.images}>
+                <div className={s.content}>
                     {data.content}
                 </div>
             }
@@ -36,13 +35,13 @@ const ContentItem = ({ data }: Props) => {
                     </div>
                 }
             </div>
+            {
+                data.class &&
+                <div className={s.class}>
+                    Lớp {data.class}
+                </div>
+            }
 
-            <div>
-                {
-                    data.images?.map(item => <ImageCommon src={item.src} />)
-                }
-
-            </div>
         </div>
     );
 };

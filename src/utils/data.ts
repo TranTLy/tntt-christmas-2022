@@ -1,5 +1,6 @@
 let seq = 0
-import Image1 from './assets/001.png'
+import Image1 from './assets/001.jpg'
+import Image2 from './assets/002.jpg'
 import { Content } from './type.utils'
 
 const CLASS = {
@@ -19,11 +20,11 @@ const CLASS = {
 export const DATA: Content[] = [
     {
         id: ++seq,
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        content: "",
         name: "Ly Tran",
         holyName: "Maria",
         class: CLASS.KHAI_TAM,
-        images: [Image1]
+        image: Image1,
     },
     {
         id: ++seq,
@@ -31,6 +32,6 @@ export const DATA: Content[] = [
         name: "Ly Tran 2",
         holyName: "Maria",
         class: CLASS.KHAI_TAM,
-        images: [Image1]
+        image: Image2,
     }
 ]

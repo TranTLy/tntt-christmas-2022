@@ -1,6 +1,7 @@
 @import "src/styles/variable.scss";
 
 .imgGalleryCommon {
+
   :global {
     .image-gallery-image {
       border-radius: 25px 0;
@@ -16,6 +17,21 @@
 
     .image-gallery-thumbnail-image {
       border-radius: 10px 0;
+    }
+
+    .image-gallery-right-nav,
+    .image-gallery-left-nav {
+      display: none;
+    }
+  }
+
+  &.full {
+    :global {
+
+      .image-gallery-right-nav,
+      .image-gallery-left-nav {
+        display: block;
+      }
     }
   }
 }
