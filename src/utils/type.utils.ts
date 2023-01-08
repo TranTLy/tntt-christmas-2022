@@ -9,5 +9,5 @@ export interface Content {
     name?: string,
     holyName?: string,
     class?: string,
-    images: StaticImageData[],
+    image: StaticImageData,
 }

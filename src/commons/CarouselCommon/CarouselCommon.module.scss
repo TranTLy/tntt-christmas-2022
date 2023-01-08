@@ -1,0 +1,84 @@
+@import '@src/styles/variable';
+
+.carousel {
+    &.center {
+        .slick-track {
+            margin: auto;
+        }
+    }
+
+    &.arrows.next-arrow .slick-next,
+    &.arrows.prev-arrow .slick-prev {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 50%;
+
+        background-color: $color-white;
+        // box-shadow: $box-shadow;
+        // transition: all .2s;
+
+        &:hover {
+            background-color: $color-primary-1;
+
+        }
+    }
+
+    :global {
+        .slick-arrow {
+            display: none !important;
+
+            &::before {
+                display: none;
+            }
+        }
+
+
+
+        .slick-arrow {
+            z-index: 1;
+        }
+
+
+
+        .slick-track {
+            gap: 1.2rem;
+        }
+
+        .slick-dots {
+            li {
+                $size: 8px;
+                width: $size !important;
+                height: $size !important;
+                border-radius: 50% !important;
+                border: none;
+
+                button {
+                    width: $size !important;
+                    height: $size !important;
+                    background: $color-gray-2 !important;
+                    border-radius: 50% !important;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &.slick-active button {
+                    background: $color-primary-2 !important;
+                }
+            }
+        }
+
+        .ant-carousel {
+            padding-bottom: 2rem;
+        }
+
+        .slick-dots-bottom {
+            bottom: -3rem !important;
+        }
+    }
+}

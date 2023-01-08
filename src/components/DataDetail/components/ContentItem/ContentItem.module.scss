@@ -1,0 +1,53 @@
+@import '@src/styles/variable';
+
+
+.contentItem {
+    font-family: $font-family-2;
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: $color-primary-1;
+            border-radius: 50%;
+            padding: 1.6rem;
+            color: $color-white;
+
+            $size: 2.4rem;
+            width: $size;
+            height: $size;
+            margin-left: .8rem;
+
+            font-weight: bold;
+        }
+
+    }
+
+    .content {
+        padding: 1.6rem;
+        max-width: 768px;
+        margin: auto;
+        text-align: justify;
+
+        // max-height: 10rem;
+        // overflow: auto;
+    }
+
+    .nameWrap,
+    .class {
+        text-align: center;
+        margin: auto;
+    }
+
+    .class {
+        color: $color-gray;
+    }
+}

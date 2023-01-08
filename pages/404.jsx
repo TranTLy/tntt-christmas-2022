@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { ButtonCommon } from "../src/commons";
-import styles from "../styles/404.module.scss";
+import styles from "../src/styles/404.module.scss";
 
 const NotFoundPage = () => {
     return (

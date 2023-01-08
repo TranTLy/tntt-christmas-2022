@@ -1,5 +1,7 @@
 @import "./variable.scss";
 @import "./utilities";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
 
 html,
 body {
@@ -33,7 +35,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: $font-size-paragraph  !important;
+  font-size: $font-size-paragraph !important;
   line-height: 2.2rem;
   font-weight: 500;
 }
@@ -170,7 +172,7 @@ h6 {
     }
 
     input {
-      height: $height-btn-small  !important;
+      height: $height-btn-small !important;
 
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
