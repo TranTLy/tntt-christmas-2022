@@ -48,6 +48,12 @@ const ImgGalleryCommon = memo(({ images, thumbnailPosition = 'bottom', onChange,
         setIsFullScreen(isOpen)
     }
 
+    const onClick = (e) => {
+        if (!isFullScreen) {
+            nodeRef.current.fullScreen()
+        }
+    }
+
     return (
         <div className={classNames(s.imgGalleryCommon, {
             [s.full]: isFullScreen
@@ -61,6 +67,7 @@ const ImgGalleryCommon = memo(({ images, thumbnailPosition = 'bottom', onChange,
                 disableKeyDown={false}
                 onSlide={onChange}
                 onScreenChange={onScreenChange}
+                onClick={onClick}
             />
         </div>
     )

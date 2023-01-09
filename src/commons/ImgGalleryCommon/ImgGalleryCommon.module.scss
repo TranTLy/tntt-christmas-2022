@@ -32,6 +32,20 @@
       .image-gallery-left-nav {
         display: block;
       }
+
+      .image-gallery-swipe {
+        margin-top: 2.4rem;
+      }
+
+      .image-gallery-content {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .image-gallery-slide-wrapper {
+        flex: 1;
+      }
     }
   }
 }
